@@ -24,7 +24,7 @@ public class DetalleOrden {
 
     @Money
     @Depends("precioPorUnidad, cantidad")
-    public Byte getImporte() {
+    public BigDecimal getImporte() {
         if (precioPorUnidad == null) return BigDecimal.ZERO;
         return new BigDecimal(cantidad).multiply(precioPorUnidad);
     }
