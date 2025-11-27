@@ -6,11 +6,14 @@ import org.openxava.calculators.ICalculator;
 import org.openxava.jpa.XPersistence;
 import javax.persistence.Query;
 
+
 public class CalculatorNumero implements ICalculator {
 
     @Getter
     @Setter
     private Integer anioFiscal;
+
+
 
 
     @Override

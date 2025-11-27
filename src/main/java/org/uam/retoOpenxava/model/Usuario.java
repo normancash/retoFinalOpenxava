@@ -6,8 +6,11 @@ import lombok.Setter;
 import javax.persistence.Entity;
 
 @Entity
-@Getter @Setter
-public class Categoria extends BaseEntity{
-    public String nombre;
-    public String descripcion;
+@Getter
+@Setter
+public class Usuario extends BaseEntity{
+
+    private String username;
+    private String password;
+
 }

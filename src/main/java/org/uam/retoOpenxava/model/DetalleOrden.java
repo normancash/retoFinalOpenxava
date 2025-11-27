@@ -12,9 +12,10 @@ import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 
-@Embeddable
+
 @Getter
 @Setter
+@Embeddable
 public class DetalleOrden {
 
     @ManyToOne(fetch = FetchType.LAZY)

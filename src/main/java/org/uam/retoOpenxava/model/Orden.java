@@ -2,10 +2,7 @@ package org.uam.retoOpenxava.model;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.openxava.annotations.DefaultValueCalculator;
-import org.openxava.annotations.ListProperties;
-import org.openxava.annotations.PropertyValue;
-import org.openxava.annotations.ReadOnly;
+import org.openxava.annotations.*;
 import org.openxava.calculators.CurrentLocalDateCalculator;
 import org.openxava.calculators.CurrentMonthCalculator;
 import org.openxava.calculators.CurrentYearCalculator;
