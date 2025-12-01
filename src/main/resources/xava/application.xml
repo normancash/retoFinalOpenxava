@@ -19,5 +19,8 @@
 		<controller name="Print"/>
 	</module>		
 	-->
-	
+	<module name="Categoria">
+		<model name="Categoria"/>
+		<controller name="MiCRUD"/>
+	</module>
 </application>
