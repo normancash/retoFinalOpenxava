@@ -14,6 +14,7 @@ import javax.persistence.OneToOne;
 public class Inventario extends BaseEntity{
 
     @OneToOne
+    @JoinColumn(name="idProducto",referencedColumnName = "id")
     private Producto producto;
 
     private int cantidad;
