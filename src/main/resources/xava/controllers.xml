@@ -40,7 +40,16 @@ https://github.com/openxava/openxava/blob/master/openxavatest/src/main/resources
                 class="org.uam.retoOpenxava.actions.SignInAction"/>
     </controller>
 
-    <controller name="MiCRUD">
+   <!-- <controller name="MiCRUD">
+        <extends controller="Typical"/>
+        <action name="save" mode="detail"
+                by-default="if-possible"
+                class="org.uam.retoOpenxava.actions.MiSaveAction"
+                image="save.gif"
+                icon="content-save"
+                keystroke="Control S"/>
+    </controller>-->
+    <controller name="MYCRUD">
         <extends controller="Typical"/>
         <action name="save" mode="detail"
                 by-default="if-possible"
