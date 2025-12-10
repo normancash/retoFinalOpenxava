@@ -23,8 +23,4 @@
 		<model name="Orden"/>
 		<controller name="MYCRUD"/>
 	</module>
-	<module name="Categoria">
-		<model name="Categoria"/>
-		<controller name="MiCRUD"/>
-	</module>
 </application>

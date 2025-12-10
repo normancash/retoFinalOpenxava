@@ -4,6 +4,7 @@ import com.openxava.naviox.actions.ForwardToOriginalURIBaseAction;
 import com.openxava.naviox.impl.SignInHelper;
 import org.openxava.jpa.XPersistence;
 import org.openxava.util.Is;
+import org.openxava.util.XavaResources;
 
 import javax.persistence.Query;
 
@@ -31,6 +32,8 @@ public class SignInAction extends ForwardToOriginalURIBaseAction {
             return;
         }*/
         SignInHelper.signIn(getRequest(), userName);
+        XavaResources.getString("user");
+        getRequest().getSession().getAttribute("user");
         getView().reset();
         getContext().resetAllModulesExceptCurrent(getRequest());
         forwardToOriginalURI();
