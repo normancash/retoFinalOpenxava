@@ -23,10 +23,10 @@ public class SignInAction extends ForwardToOriginalURIBaseAction {
         query.setParameter("username", userName);
         query.setParameter("password", password);
         count = (Long)query.getSingleResult();
-        if (count == 0L) {
+       /* if (count == 0L) {
             addError("unauthorized_user");
             return;
-        }
+        }*/
         /*if (!SignInHelper.isAuthorized(getRequest(), userName, password, getErrors())) {
             return;
         }*/
